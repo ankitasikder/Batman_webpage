@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>batman</title>
+    <!-- <script src="index.js"></script> -->
+    <link rel="icon" href="./images/bat.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000Px;
+            position: relative;
+            margin-left: 250px;
+            margin-top: 310px;
+            box-shadow: 0 35px 55px 0 rgba(12, 4, 6, 0.945), 0 35px 55px 0 rgba(14, 6, 7, 0.932);
+
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin-left: 20px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #3b0a0a;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <ul>
+        <li>
+            <font color="red"><b>B</b></font>
+        </li>
+        <li>
+            <font color="red"><b>A</b></font>
+        </li>
+        <li>
+            <font color="red"><b>T</b></font>
+        </li>
+        <li>
+            <font color="white"><b>&nbsp</b></font>
+        </li>
+        <li>
+            <font color="gold"><b>M</b></font>
+        </li>
+        <li>
+            <font color="gold"><b>A</b></font>
+        </li>
+        <li>
+            <font color="gold"><b>N</b></font>
+        </li>
+    </ul>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="./images/bat10.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"> <b><i>Justice, not vengeance.</i></b></font>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="./images/bat2.jpg" style="width:100%" height="500px" width="600px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>WHY DO WE FALL? SO THAT WE CAN LEARN TO PICK OURSELVES BACK
+                            UP.</i></b> </font>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="./images/bat3.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>WHATEVER DOESN’T KILL YOU, SIMPLY MAKES YOU STRONGER.</i></b>
+                </font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="./images/bat4.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>I made a promise to him, on his grave.</i></b> </font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="./images/bat5.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>I've spent a lot of time trying to divide us.</i></b></font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="./images/bat6.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>I need to bring us together, and make this right.</i></b></font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="./images/bat7.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>THE NIGHT IS DARKEST JUST BEFORE THE DAWN. AND I PROMISE YOU, THE
+                            DAWN IS COMING.</i></b> </font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="./images/bat8.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>SOMETIMES IT’S ONLY MADNESS THAT MAKES US WHAT WE ARE.</i></b>
+                </font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="./images/bat9.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>OUR GREATEST GLORY IS NOT IN EVER FALLING, BUT IN RISING EVERY TIME
+                            WE FALL.</i></b> </font>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="./images/bat1.jpg" style="width:100%" height="500px" opacity=0.6>
+            <div class="text">
+                <font color="white" size="6px"><b><i>EVERYTHING’S IMPOSSIBLE UNTIL SOMEBODY DOES IT.</i></b> </font>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="margin-left:540px">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+    <div class="pok">
+
+        <p style="text-align: justify;"><strong>
+                Bruce Wayne is the CEO of Wayne Enterprises and the main vigilante operating in Gotham City, New Jersey
+                known as the Batman. After witnessing the murder of his parents at the hands of a mugger as a child,
+                Bruce waged a war on crime in Gotham City for over 20 years before the Black Zero Event. He also serves
+                as the leader of the Justice League which he co-founded alongside Wonder Woman.
+                Afterward, Batman continued to fight crime in Gotham while focusing his efforts on the team's future.
+                Sometime later, he came into contact with the Martian Manhunter, who warned him of a future potential
+                counterattack by the forces of Darkseid following Steppenwolf's failure.<br>
+
+                <a href="https://www.primevideo.com/detail/0P9EP6QWO8S60WBB7030KAV4Z7/ref=atv_dp_share_cu_r">
+                    <font size="6px" color="white">BATMAN BEGINS</font>
+                </a>
+                <br>
+                <a href="https://www.primevideo.com/detail/0QSTXR0EXWWYI4D3UGMLFM4A0Q/ref=atv_dp_share_cu_r">
+                    <font size="6px" color="white">BATMAN THE DARK KNIGHT</font>
+                </a>
+                <br>
+                <a href="https://www.primevideo.com/detail/0HX4ZJ73JRAEWPVUE5ZA7ALIIX/ref=atv_dp_share_cu_r">
+                    <font size="6px" color="white">BATMAN THE DARK KNIGHT RISES</font>
+                </a>
+                <br>
+                <a href="https://dcextendeduniverse.fandom.com/wiki/Batman">
+                    <font size="6px" color="white">Read More</font>
+                </a>
+
+            </strong></p>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </script>
+    </div>
+
+
+
+
+</body>
+
+</html>
